@@ -27,8 +27,8 @@ const TopSection: React.FC = () => {
         <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
           <h1 className="text-5xl font-bold text-[#2B7A6F] mb-20 pl-8 md:pl-16">
             <AnimatedText 
-              text={`Every journey start somewhere\n,where are you today?`}
-              className="text-left"
+              text={`Every journey start somewhere\nwhere are you today?`}
+              className="text-left whitespace-pre-line"
             />
           </h1>
           <div className="text-[#005B8F] mb-8 pl-8 md:pl-16 flex items-center gap-2 relative min-h-[2.5em]">
