@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import AnimatedText from "../ui/animated-text";
 import WordByWordText from "../ui/word-by-word-text";
 
