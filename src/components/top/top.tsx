@@ -2,13 +2,11 @@
 import React, { useState } from "react";
 import AnimatedText from "../ui/animated-text";
 import WordByWordText from "../ui/word-by-word-text";
-import { IoWalkSharp } from "react-icons/io5";
+
 import Image from "next/image";
 
 const TopSection: React.FC = () => {
-  const [isAnimating, setIsAnimating] = useState(true);
-  const [currentWord, setCurrentWord] = useState(0);
-  const words = "Pick the vibe that matches you best and let&apos;s get started.".split(" ");
+  // Removed unused state and variables
 
   return (
     <div className="relative w-full h-auto overflow-hidden pt-16 md:pt-0 ">
@@ -35,10 +33,7 @@ const TopSection: React.FC = () => {
             <WordByWordText
               text="Walk, Track, Thrive . It All Starts Here..."
               className="text-left"
-              onComplete={() => setIsAnimating(false)}
-              onWordChange={setCurrentWord}
             />
-           
           </div>
           <button className="bg-[#005B8F] hover:bg-[#34c28b] transition-colors text-white px-6 py-3 rounded-lg ml-0 md:ml-16 w-full md:w-auto">
             Start Tracking
