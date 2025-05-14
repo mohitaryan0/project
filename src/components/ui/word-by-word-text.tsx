@@ -58,7 +58,7 @@ const WordByWordText = ({
           onAnimationComplete={() => {
             if (i === words.length - 1 && !hasCompleted.current) {
               hasCompleted.current = true;
-              onComplete && onComplete();
+              if (onComplete) onComplete();
             }
           }}
         >

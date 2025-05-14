@@ -31,7 +31,7 @@ export function useBlogCarousel({ posts, autoPlay = true, interval = 5000 }: Use
 
     const timer = setInterval(nextSlide, interval);
     return () => clearInterval(timer);
-  }, [currentIndex, autoPlay, interval]);
+  }, [currentIndex, autoPlay, interval, nextSlide, totalPosts]);
 
   return {
     currentIndex,

@@ -51,7 +51,7 @@ export default function Hero() {
               </button>
               <div className="absolute left-44 top-1/2 -translate-y-1/2 h-[200px] w-[800px] bg-white shadow-lg z-40 p-6 flex items-center justify-center">
                 <p className="text-black dark:text-white text-center text-sm md:text-3xl">
-                  "I'm doing just fine - no storms on the horizon, and I plan to keep it that way."
+                  &quot;I&apos;m doing just fine - no storms on the horizon, and I plan to keep it that way.&quot;
                 </p>
               </div>
             </>
@@ -66,7 +66,7 @@ export default function Hero() {
             )}
           >
             <div className="text-black dark:text-white text-sm md:text-base">
-              <p className="mb-4">You've been doing great so far—now let's level up your activity!</p>
+              <p className="mb-4">You&apos;ve been doing great so far—now let&apos;s level up your activity!</p>
               <p className="font-semibold mb-2">Explore these Steppps challenges designed for your next move:</p>
               <ul className="space-y-2">
                 <li className="flex items-start">
@@ -111,7 +111,7 @@ export default function Hero() {
           {!isFirstRolled && (
             <div className="bg-white shadow-lg z-40 p-6 flex items-center justify-center w-full mb-4">
               <p className="text-black dark:text-white text-center text-sm md:text-base">
-                "I'm doing alright. No major issues — and I'd like to keep it that way..."
+                &quot;I&apos;m doing alright. No major issues — and I&apos;d like to keep it that way...&quot;
               </p>
             </div>
           )}
@@ -134,7 +134,7 @@ export default function Hero() {
             )}
           >
             <div className="text-black dark:text-white text-sm md:text-base">
-              <p className="mb-4">You've been doing great so far—now let's level up your activity!</p>
+              <p className="mb-4">You&apos;ve been doing great so far—now let&apos;s level up your activity!</p>
               <p className="font-semibold mb-2">Explore these Steppps challenges designed for your next move:</p>
               <ul className="space-y-2">
                 <li className="flex items-start">
@@ -170,7 +170,7 @@ export default function Hero() {
               </button>
               <div className="absolute right-44 top-1/2 -translate-y-1/2 h-[200px] w-[800px] bg-white shadow-lg z-40 p-6 flex items-center justify-center">
                 <p className="text-black dark:text-white text-center text-sm md:text-3xl">
-                  "Too much sitting, not enough moving — feeling the energy slump and the extra inches creeping in."
+                  &quot;Too much sitting, not enough moving — feeling the energy slump and the extra inches creeping in.&quot;
                 </p>
               </div>
             </>
@@ -185,7 +185,7 @@ export default function Hero() {
             )}
           >
             <div className="text-black dark:text-white text-sm md:text-base">
-              <p className="mb-4">We know change isn't easy after a sedentary lifestyle, but you're here to take the first step.</p>
+              <p className="mb-4">We know change isn&apos;t easy after a sedentary lifestyle, but you&apos;re here to take the first step.</p>
               <p className="font-semibold mb-2">Here are some Steppps challenges to keep you motivated:</p>
               <ul className="space-y-2">
                 <li className="flex items-start">
@@ -230,7 +230,7 @@ export default function Hero() {
           {!isSecondRolled && (
             <div className="bg-white shadow-lg z-40 p-6 flex items-center justify-center w-full mb-4">
               <p className="text-black dark:text-white text-center text-sm md:text-base">
-                "I've been sitting more than I should. My energy's dropped, the belly's grown..."
+                &quot;I&apos;ve been sitting more than I should. My energy&apos;s dropped, the belly&apos;s grown...&quot;
               </p>
             </div>
           )}
@@ -253,7 +253,7 @@ export default function Hero() {
             )}
           >
             <div className="text-black dark:text-white text-sm md:text-base">
-              <p className="mb-4">We know change isn't easy after a sedentary lifestyle, but you're here to take the first step.</p>
+              <p className="mb-4">We know change isn&apos;t easy after a sedentary lifestyle, but you&apos;re here to take the first step.</p>
               <p className="font-semibold mb-2">Here are some Steppps challenges to keep you motivated:</p>
               <ul className="space-y-2">
                 <li className="flex items-start">

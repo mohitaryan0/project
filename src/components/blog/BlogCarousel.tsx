@@ -1,5 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
-import { Button } from "@/components/ui/button";
+import { motion } from 'framer-motion';
 import { BlogCard } from './BlogCard';
 import { useBlogCarousel } from '@/hooks/useBlogCarousel';
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";

@@ -2,12 +2,13 @@
 import React, { useState } from "react";
 import AnimatedText from "../ui/animated-text";
 import WordByWordText from "../ui/word-by-word-text";
-import { IoFootstepsSharp, IoWalkSharp } from "react-icons/io5";
+import { IoWalkSharp } from "react-icons/io5";
+import Image from "next/image";
 
 const TopSection: React.FC = () => {
   const [isAnimating, setIsAnimating] = useState(true);
   const [currentWord, setCurrentWord] = useState(0);
-  const words = "Pick the vibe that matches you best and let's get started.".split(" ");
+  const words = "Pick the vibe that matches you best and let&apos;s get started.".split(" ");
 
   return (
     <div className="relative w-full h-[750px] overflow-hidden ">
@@ -32,7 +33,7 @@ const TopSection: React.FC = () => {
           </h1>
           <div className="text-[#005B8F] mb-8 pl-8 md:pl-16 flex items-center gap-2 relative min-h-[2.5em]">
             <WordByWordText
-              text="Pick the vibe that matches you best and let's get started."
+              text="Pick the vibe that matches you best and let&apos;s get started."
               className="text-left"
               onComplete={() => setIsAnimating(false)}
               onWordChange={setCurrentWord}
@@ -58,9 +59,11 @@ const TopSection: React.FC = () => {
 
         {/* Image Section */}
         <div className="md:w-1/2 w-full flex justify-center mt-8 md:mt-0">
-          <img
+          <Image
             src="/images/top/walking.png"
             alt="Fitness transformation GIF"
+            width={500}
+            height={300}
             className="max-w-full h-auto"
           />
         </div>
