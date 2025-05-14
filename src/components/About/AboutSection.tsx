@@ -13,15 +13,15 @@ export default function AboutSection() {
           priority
         />
       </div>
+      {/* Our Story Label */}
+      <p className="text-sm uppercase tracking-widest text-black dark:text-white mb-2 text-center">Our Story</p>
+      {/* Centered Heading */}
+      <h2 className="text-4xl md:text-5xl font-bold leading-tight text-center text-black dark:text-white mb-10">
+        Fitness Should Be Easy, Fun, and Part of Your Day With <span className="text-green-500"> Steppps.</span>
+      </h2>
       <div className="relative z-10 max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         {/* Left Text and Image */}
         <div>
-          <p className="text-sm uppercase tracking-widest text-black dark:text-white mb-2">Our Story</p>
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight text-black dark:text-white mb-4">
-            Fitness Should Be Easy <br />
-            Fun, and Part of Your Day <br />
-            <span className="text-green-500">With Steppps.</span>
-          </h2>
           <div className="rounded-lg overflow-hidden mt-6 md:mt-10 shadow-xl transition-all duration-300 hover:scale-[1.05]">
             <Image
               src="/images/about/walking.png"
@@ -34,45 +34,21 @@ export default function AboutSection() {
         </div>
 
         {/* Right Media and Stats */}
-        <div className="flex flex-col justify-between">
-          <div className="flex gap-4 mb-8">
-            <div className="relative w-full md:w-[200px] h-[200px] rounded-xl overflow-hidden">
-            <a
-    href="https://play.google.com/store/apps/details?id=com.mycompany.vruns"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-              <Image
-                src="/images/about/google.png"
-                  alt="Google Play Store"
-                width={200}
-                height={140}
-                  className="object-contain w-full h-full"  
-              />
-              </a>
-            </div>
-            <div className="relative w-full md:w-[200px] h-[200px] rounded-xl overflow-hidden">
-            <a
-    href="https://apps.apple.com/us/app/steppps-steps-to-fitness/id6608976790"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-              <Image
-                src="/images/about/apple.png"
-                alt="Blog 2"
-                width={200}
-                height={140}
-                className="object-contain"
-              />
-              </a>
+      
+          {/* QR/App Logos Card */}
+          <div className="bg-white/80 dark:bg-gray-800 rounded-xl shadow-lg flex flex-col justify-center items-center gap-6 mb-8 w-full md:w-[600px] h-[360px] mx-auto mt-10 p-8">
+            <p className="text-center text-lg text-[#006F5B] dark:text-white font-medium px-2 mt-4">
+              Steppps makes fitness accessible and enjoyable for everyone. Our mission is to help you achieve your health goals through the power of habit, making physical activity a natural part of your daily routine.
+            </p>
+            <div className="w-full border-t border-gray-300 dark:border-gray-600 my-4"></div>
+            <div className="flex justify-between items-center w-full gap-6">
+              <div className="flex gap-6">
+                <Image src="/images/about/google.png" alt="Google Play" width={140} height={130} className="object-contain" />
+                <Image src="/images/about/apple.png" alt="Apple Store" width={120} height={120} className="object-contain" />
               </div>
+              <Image src="/images/about/scan.png" alt="Steppps QR" width={120} height={120} className="object-contain" />
+            </div>
           </div>
-
-          <p className="text-[#006F5B] dark:text-white mb-4 md:mb-6">
-            Steppps makes fitness accessible and enjoyable for everyone. Our mission is to help you achieve your health goals through the power of habit, making physical activity a natural part of your daily routine.
-          </p>
-
-         
 
           {/* CTA */}
           <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-4 md:gap-0">
@@ -82,18 +58,8 @@ export default function AboutSection() {
               </div>
               <span className="uppercase text-sm tracking-wide">Learn More</span>
             </Link>
-            <div className="relative w-[80px] h-[80px] rounded-xl overflow-hidden md:w-[100px] md:h-[100px]">
-              <Image
-                src="/images/about/scan.png"
-                alt="Steppps Logo"
-                width={100}
-                height={100}
-                className="object-contain"
-              />
-            </div>
           </div>
         </div>
-      </div>
     </section>
   );
 }
