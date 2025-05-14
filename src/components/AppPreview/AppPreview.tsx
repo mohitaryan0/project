@@ -1,6 +1,7 @@
 'use client';
 
 import { ThreeDMarquee } from "../ui/3d-marquee";
+import Image from "next/image";
 
 const AppPreview = () => {
   const images = [
@@ -57,7 +58,7 @@ const AppPreview = () => {
       </div>
 
       {/* Test image */}
-      <img src="/images/features/track.png" alt="Test" className="w-full h-48 object-cover mb-4" />
+      <Image src="/images/features/track.png" alt="Test" width={500} height={192} className="w-full h-48 object-cover mb-4" />
 
       {/* overlay */}
       <div className="absolute inset-0 z-10 h-full w-full bg-black/80 dark:bg-black/40" />
