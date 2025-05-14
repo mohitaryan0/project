@@ -23,12 +23,12 @@ function BlogCard({ title, description, date, image, className }: BlogCardProps)
         ${className || ''}
       `}
     >
-      <div className="relative w-full h-[300px]">
+      <div className="relative w-full h-[200px] md:h-[300px]">
         <Image
           src={image}
           alt={title}
           fill
-          className="p-6 relative z-10 before:absolute before:inset-0 before:bg-gradient-to-br before:from-transparent before:to-black/20 before:pointer-events-none before:transition-all before:duration-500 hover:before:to-black/40 object-cover"
+          className="relative z-10 object-cover"
         />
       </div>
       <div className="p-6">
