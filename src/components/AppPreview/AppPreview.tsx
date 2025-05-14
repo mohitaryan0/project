@@ -48,7 +48,7 @@ const AppPreview = () => {
         at a time.
       </h2>
       <p className="relative z-20 mx-auto max-w-2xl py-8 text-center text-sm text-neutral-200 md:text-base">
-      ​Steppps is an app that allows you to build on the habit of 'Walking' and create health outcomes for you!
+      ​Steppps is an app that allows you to build on the habit of &apos;Walking&apos; and create health outcomes for you!
       </p>
 
       <div className="relative z-20 flex flex-wrap items-center justify-center gap-4 pt-4">
