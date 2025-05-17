@@ -47,7 +47,7 @@ export function CombinedFeatures3DGrid() {
       description:
         "Check leaderboards for events like IPL 2025 to see where you stand.",
       icon: <IconChartBar size={28} />,
-      image: "/images/features/challenges2.png",
+      image: "/images/features/event.png",
     },
     {
       title: "Workout Stats",
@@ -79,11 +79,10 @@ export function CombinedFeatures3DGrid() {
       {/* Background Image Layer */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-100 z-0"
-        style={{ backgroundImage: "url('/images/features/image.png')", rotate:"180deg" } } // <-- update this to your actual image path
-      />
+             />
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#F0FAFD]/70 to-[#D5F0FF]/70 z-10" />
+      <div className="absolute inset-0  z-10" />
 
       {/* Content Layer */}
       <div className="relative z-20 py-12">
@@ -122,7 +121,7 @@ export function CombinedFeatures3DGrid() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="flex flex-col justify-between rounded-xl border dark:border-neutral-800 bg-limegreen/50 dark:bg-neutral-900 py-10 px-6 shadow-md"
+                className="flex flex-col justify-between rounded-xl border dark:border-neutral-800 bg-green/90 py-10 px-6 shadow-md"
               >
                 <div className="flex items-center gap-2 mb-6 text-neutral-800 dark:text-neutral-100">
                   {feature.icon}

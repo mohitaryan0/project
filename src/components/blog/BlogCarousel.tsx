@@ -94,13 +94,13 @@ export function BlogCarousel({ posts, autoPlay = true }: BlogCarouselProps) {
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-4 sm:gap-6">
       <button
               onClick={prevSlide}
-              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-white"
+              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-[#33ccbb]"
             >
               <IconArrowLeft className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:rotate-12 dark:text-white" />
             </button>
             <button
               onClick={nextSlide}
-              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-white"    
+              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-[#33ccbb]"    
             >
               <IconArrowRight className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:-rotate-12 dark:text-white" />
             </button>

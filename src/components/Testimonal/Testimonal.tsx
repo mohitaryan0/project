@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
+
 import { AnimatedTestimonials } from "@/components/Testimonal/animated-testimonials";
 
 const text="What Our Users Say"
@@ -28,15 +28,9 @@ const testimonials = [
 
 const Testimonal = () => {
   return (
-    <section className="relative py-20 bg-gradient-to-r from-[#EDF9FF] to-[#CAEFFF] dark:bg-teal-dark">
+    <section className="relative py-20  ">
       <div className="absolute inset-0">
-        <Image
-          src="/images/features/image.png"
-          alt="Background"
-          fill
-          className="object-cover opacity-30 rotate-180"
-          priority
-        />
+        
       </div>
       <div className="container relative z-10 mx-auto px-4 text-[#116899]">
         {/* Heading */}

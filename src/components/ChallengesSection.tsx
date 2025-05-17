@@ -46,11 +46,11 @@ export default function ChallengesSection() {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-80 z-0"
-        style={{ backgroundImage: "url('/images/features/image.png')", rotate: "180deg" }} // <-- replace with your image path
+         // <-- replace with your image path
       />
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#D8F5FF]/65 to-[#BDEBFF]/65 dark:from-[var(--color-limegreen)]/80 z-10" />
+      <div className="absolute inset-0  z-10" />
 
       {/* Content Layer */}
       <div
@@ -104,7 +104,7 @@ export default function ChallengesSection() {
           <div className="text-left mt-12 flex items-center justify-center">
             <a
               href="/challenges"
-              className="inline-flex items-center px-8 py-4 border border-transparent text-sm font-medium rounded-md text-white bg-[#008E6E] hover:bg-light-cyan/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 dark:bg-green-700 dark:hover:bg-green-800"
+              className="inline-flex hover:bg-gray-100 items-center px-8 py-4 border border-transparent text-sm font-medium rounded-md text-black bg-[#33ccbb]"
             >
               Create Your Group Challenge
             </a>

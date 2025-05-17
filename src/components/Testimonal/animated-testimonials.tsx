@@ -47,7 +47,7 @@ export const AnimatedTestimonials = ({
   }, [autoplay, handleNext]);
 
   return (
-    <div className="mx-auto max-w-sm px-4 py-20 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12">
+    <div className="mx-auto max-w-sm px-4 py-20 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12 ">
       <div className="relative grid grid-cols-1 gap-32 md:grid-cols-2">
         <div>
           <div className="relative h-80 w-full">
@@ -128,21 +128,21 @@ export const AnimatedTestimonials = ({
               ))}
             </motion.p>
           </motion.div>
-          <div className="flex gap-4 pt-12 md:pt-0">
-            <button
-              onClick={handlePrev}
-              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-[#116899] "
-            >
-              <IconArrowLeft className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:rotate-12" />
-            </button>
-            <button
-              onClick={handleNext}
-              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-[#116899]"    
-            >
-              <IconArrowRight className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:-rotate-12" />
-            </button>
-          </div>
         </div>
+      </div>
+      <div className="flex gap-4 justify-center mt-8 -ml-115">
+        <button
+          onClick={handlePrev}
+          className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-[#33ccbb] "
+        >
+          <IconArrowLeft className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:rotate-12" />
+        </button>
+        <button
+          onClick={handleNext}
+          className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-[#33ccbb]"    
+        >
+          <IconArrowRight className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:-rotate-12" />
+        </button>
       </div>
     </div>
   );

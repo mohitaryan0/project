@@ -29,20 +29,8 @@ export default function Home() {
       
       <CombinedFeatures3DGrid />
     
-      <div className="relative py-12">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/features/image.png"
-            alt="Background"
-            fill
-            className="object-cover opacity-30"
-            priority
-          />
-        </div>
-        <div className="relative z-10">
           <AppPreview />
-        </div>
-      </div>
+        
       
       <ChallengesSection />
       <BlogSection />
