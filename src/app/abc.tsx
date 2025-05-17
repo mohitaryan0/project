@@ -40,7 +40,7 @@ export function CombinedFeatures3DGrid() {
       description:
         "Share your progress and runs with friends to inspire and compete.",
       icon: <IconShare size={28} />,
-      image: "/images/features/social.png",
+      image: "/images/features/mmm.png",
     },
     {
       title: "Event Leaderboards",
