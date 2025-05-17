@@ -194,7 +194,7 @@ export default function Hero() {
                 >
                   <div className="text-black dark:text-white text-sm md:text-base">
                   <p className="mb-4">💪 Change Starts with One Step</p>
-                    <p className="font-semibold mb-2">Getting active isn't easy—but you've already started. Keep going with these challenges:</p>
+                    <p className="font-semibold mb-2">Getting active isn&apos;t easy—but you&apos;ve already started. Keep going with these challenges:</p>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <span className="mr-2">👣</span>
@@ -264,7 +264,7 @@ export default function Hero() {
                   >
                     <div className="text-black dark:text-white text-xs xs:text-sm">
                     <p className="mb-4">💪 Change Starts with One Step</p>
-                    <p className="font-semibold mb-2">Getting active isn't easy—but you've already started. Keep going with these challenges:</p>
+                    <p className="font-semibold mb-2">Getting active isn&apos;t easy—but you&apos;ve already started. Keep going with these challenges:</p>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <span className="mr-2">👣</span>
