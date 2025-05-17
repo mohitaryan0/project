@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+
 
 export default function AboutSection() {
   return (
@@ -41,7 +41,7 @@ export default function AboutSection() {
         <div className="flex flex-col items-center md:items-start w-full">
           <div className="bg-white/80 dark:bg-gray-800 rounded-xl shadow-lg flex flex-col justify-center items-center gap-4 mb-6 md:mb-8 w-full max-w-[95vw] md:w-[600px] h-auto md:h-[360px] mx-auto mt-8 md:mt-10 p-4 md:p-8">
             <p className="text-center text-base md:text-lg text-[#006F5B] dark:text-white font-medium px-2">
-              Steppps is your friendly fitness buddy, helping you move more, feel better, and make activity part of your daily rhythm. We believe small steps lead to big changes—and we're here to make every step enjoyable, sustainable, and simple.
+              Steppps is your friendly fitness buddy, helping you move more, feel better, and make activity part of your daily rhythm. We believe small steps lead to big changes—and we are here to make every step enjoyable, sustainable, and simple.
             </p>
             <div className="w-full border-t border-gray-300 dark:border-gray-600 my-2 md:my-4"></div>
             <div className="flex flex-col sm:flex-row sm:justify-between items-center w-full gap-4 md:gap-6">

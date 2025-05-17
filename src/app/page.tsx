@@ -8,7 +8,7 @@ import AppPreview from "@/components/AppPreview/AppPreview";
 import Testimonal from "@/components/Testimonal/Testimonal";
 import BlogSection from "@/components/blog/BlogSection";
 import TopSection from "@/components/top/top";
-import Image from "next/image";
+
 
 
 
