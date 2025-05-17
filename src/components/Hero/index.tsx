@@ -38,7 +38,7 @@ export default function Hero() {
         <div className="absolute inset-0 -z-10 overflow-hidden">
        
         </div>
-        <div className="container mx-auto px-2 sm:px-4 py-10 md:py-24 lg:py-32">
+        <div className="container mx-auto px-2 sm:px-4 py-10 md:py-12 lg:py-16">
           <div className="w-full flex flex-col items-center">
             {/* First Section */}
             <div className="relative w-full max-w-[1200px] md:h-[300px]">
@@ -70,20 +70,21 @@ export default function Hero() {
                   )}
                 >
                   <div className="text-black dark:text-white text-sm md:text-base">
-                    <p className="mb-4">You&apos;ve been doing great so far—now let&apos;s level up your activity!</p>
-                    <p className="font-semibold mb-2">Explore these Steppps challenges designed for your next move:</p>
+                  
+                    <p className="mb-4 font-bold ">🚀 Level Up with Steppps!</p>
+                    <p className="font-semibold mb-2">Make your steps count with fun challenges inside the Steppps app:</p>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <span className="mr-2">👣</span>
-                        <span><strong>Walk Everyday in 2025</strong><br />Step into the new year by walking daily. Build healthy habits, one step at a time.</span>
+                        <span><strong>Walk Everyday in 2025</strong><br />Start the year right—walk every day and build healthy habits with Steppps.</span>
                       </li>
                       <li className="flex items-start">
                         <span className="mr-2">🏏</span>
-                        <span><strong>IPL Team Challenges</strong><br />Support your favorite IPL team by turning your steps into team pride—no competition, just fun.</span>
+                        <span><strong>Support Your IPL Team</strong><br />Turn steps into team spirit. Walk, cheer, and show your colors—no pressure, just fun!</span>
                       </li>
                       <li className="flex items-start">
                         <span className="mr-2">🔒</span>
-                        <span><strong>Personal Challenges</strong><br />Not a fan of leaderboards? Premium users can set private step goals and track progress on their terms.</span>
+                        <span><strong> Personal Challenges (Premium)</strong><br />Set private step goals with Steppps Premium. Track your progress, your way.</span>
                       </li>
                     </ul>
                   </div>
@@ -140,21 +141,21 @@ export default function Hero() {
                     )}
                   >
                     <div className="text-black dark:text-white text-xs xs:text-sm">
-                      <p className="mb-2 xs:mb-4">You&apos;ve been doing great so far—now let&apos;s level up your activity!</p>
-                      <p className="font-semibold mb-1 xs:mb-2">Explore these Steppps challenges designed for your next move:</p>
-                      <ul className="space-y-1 xs:space-y-2">
-                        <li className="flex items-start">
-                          <span className="mr-2">👣</span>
-                          <span><strong>Walk Everyday in 2025</strong><br />Step into the new year by walking daily. Build healthy habits, one step at a time.</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2">🏏</span>
-                          <span><strong>IPL Team Challenges</strong><br />Support your favorite IPL team by turning your steps into team pride—no competition, just fun.</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2">🔒</span>
-                          <span><strong>Personal Challenges</strong><br />Not a fan of leaderboards? Premium users can set private step goals and track progress on their terms.</span>
-                        </li>
+                    <p className="mb-4 font-bold ">🚀 Level Up with Steppps!</p>
+                    <p className="font-semibold mb-2">Make your steps count with fun challenges inside the Steppps app:</p>
+                    <ul className="space-y-2">
+                      <li className="flex items-start">
+                        <span className="mr-2">👣</span>
+                        <span><strong>Walk Everyday in 2025</strong><br />Start the year right—walk every day and build healthy habits with Steppps.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="mr-2">🏏</span>
+                        <span><strong>Support Your IPL Team</strong><br />Turn steps into team spirit. Walk, cheer, and show your colors—no pressure, just fun!</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="mr-2">🔒</span>
+                        <span><strong> Personal Challenges (Premium)</strong><br />Set private step goals with Steppps Premium. Track your progress, your way.</span>
+                       </li>
                       </ul>
                     </div>
                   </div>
@@ -192,21 +193,21 @@ export default function Hero() {
                   )}
                 >
                   <div className="text-black dark:text-white text-sm md:text-base">
-                    <p className="mb-4">We know change isn&apos;t easy after a sedentary lifestyle, but you&apos;re here to take the first step.</p>
-                    <p className="font-semibold mb-2">Here are some Steppps challenges to keep you motivated:</p>
+                  <p className="mb-4">💪 Change Starts with One Step</p>
+                    <p className="font-semibold mb-2">Getting active isn't easy—but you've already started. Keep going with these challenges:</p>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <span className="mr-2">👣</span>
-                        <span><strong>Walk - Lose - Win</strong><br />Join the steps challenge! Walk your way to the top 3 by June 2025 and win cash prizes.</span>
+                        <span><strong>Walk • Lose • Win</strong><br />Join the June 2025 leaderboard and win cash prizes by walking your way to the top!</span>
                       </li>
                       <li className="flex items-start">
                         <span className="mr-2">📣</span>
-                        <span><strong>IPL Challenges</strong><br />Support your favorite IPL team by turning your steps into team pride—no competition, just fun.</span>
+                        <span><strong> IPL Team Challenges</strong><br />Turn your steps into team pride. Support your IPL team—no competition, just fun.</span>
                       </li>
                       <li className="flex items-start">
                         <span className="mr-2">🔒</span>
-                        <span><strong>Personal Challenges</strong><br />Hate leaderboards? Premium users can set private step goals and track progress without the crowd.</span>
-                      </li>
+                        <span><strong>Personal Challenges (Premium)</strong><br />Go private with Steppps Premium. Set your own step goals and track progress your way.</span>
+                       </li>
                     </ul>
                   </div>
                 </div>
@@ -262,21 +263,21 @@ export default function Hero() {
                     )}
                   >
                     <div className="text-black dark:text-white text-xs xs:text-sm">
-                      <p className="mb-2 xs:mb-4">We know change isn&apos;t easy after a sedentary lifestyle, but you&apos;re here to take the first step.</p>
-                      <p className="font-semibold mb-1 xs:mb-2">Here are some Steppps challenges to keep you motivated:</p>
-                      <ul className="space-y-1 xs:space-y-2">
-                        <li className="flex items-start">
-                          <span className="mr-2">👣</span>
-                          <span><strong>Walk - Lose - Win</strong><br />Join the steps challenge! Walk your way to the top 3 by June 2025 and win cash prizes.</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2">📣</span>
-                          <span><strong>IPL Challenges</strong><br />Support your favorite IPL team by turning your steps into team pride—no competition, just fun.</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="mr-2">🔒</span>
-                          <span><strong>Personal Challenges</strong><br />Hate leaderboards? Premium users can set private step goals and track progress without the crowd.</span>
-                        </li>
+                    <p className="mb-4">💪 Change Starts with One Step</p>
+                    <p className="font-semibold mb-2">Getting active isn't easy—but you've already started. Keep going with these challenges:</p>
+                    <ul className="space-y-2">
+                      <li className="flex items-start">
+                        <span className="mr-2">👣</span>
+                        <span><strong>Walk • Lose • Win</strong><br />Join the June 2025 leaderboard and win cash prizes by walking your way to the top!</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="mr-2">📣</span>
+                        <span><strong> IPL Team Challenges</strong><br />Turn your steps into team pride. Support your IPL team—no competition, just fun.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="mr-2">🔒</span>
+                        <span><strong>Personal Challenges (Premium)</strong><br />Go private with Steppps Premium. Set your own step goals and track progress your way.</span>
+                       </li>
                       </ul>
                     </div>
                   </div>
