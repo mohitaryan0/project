@@ -10,7 +10,6 @@ export default function AboutSection() {
           alt="Background"
           fill
           className="object-cover opacity-30"
-          priority
         />
       </div>
 
@@ -35,6 +34,7 @@ export default function AboutSection() {
               height={300}
               className="w-full h-auto object-cover"
             />
+            {/* TODO: Convert /images/about/walking.png to .webp for better performance */}
           </div>
         </div>
 

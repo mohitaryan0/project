@@ -98,8 +98,8 @@ export default function Hero() {
                     alt="Active lifestyle"
                     fill
                     className="object-cover rounded-xl"
-                    priority
                   />
+                  {/* TODO: Convert /images/hero/fit.png to .webp for better performance */}
                 </div>
                 <div className="pt-[350px]" />
               </div>
@@ -113,7 +113,6 @@ export default function Hero() {
                     width={160}
                     height={160}
                     className="object-cover rounded-xl"
-                    priority
                   />
                 </div>
                 {/* Text */}
@@ -199,8 +198,8 @@ export default function Hero() {
                     alt="Lazy lifestyle"
                     fill
                     className="object-cover rounded-xl"
-                    priority
                   />
+                  {/* TODO: Convert /images/hero/fat.jpg to .webp for better performance */}
                 </div>
                 <div className="pt-[350px]" />
               </div>
@@ -214,7 +213,6 @@ export default function Hero() {
                     width={160}
                     height={160}
                     className="object-cover rounded-xl"
-                    priority
                   />
                 </div>
                 {/* Text */}
