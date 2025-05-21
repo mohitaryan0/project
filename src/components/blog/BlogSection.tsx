@@ -3,7 +3,7 @@
 import { BlogCarousel } from "@/components/blog/BlogCarousel";
 import React from 'react';
 
-const text = "Latest from our Blog";
+const text = "Latest Blog";
 
 const blogPosts = [
   {
@@ -41,11 +41,11 @@ export default function BlogSection() {
       <div className="absolute inset-0  dark:from-gray-800/90 z-10" />
 
       {/* Foreground content */}
-      <div className="relative z-20 py-16 px-6 md:px-16">
+      <div className="relative z-20 py-4 md:py-8 px-6 md:px-16">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Left Text Content */}
         <div className="flex-1">
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white leading-tight">
+          <h2 className="text-4xl md:text-6xl font-bold mb-2 md:mb-6 text-gray-900 dark:text-white leading-tight">
             <span className="relative inline-block pb-2 animate-gradient-letter">
               {text}
               <span className="absolute left-0 bottom-0 w-2/3 h-2 rounded-l-full"
@@ -56,10 +56,10 @@ export default function BlogSection() {
             </span>
           </h2>
           <div className="pl-4 border-l-4 border-primary/40">
-            <p className="text-lg leading-7 mb-2 text-[#008e6e] ">
+            <p className="hidden md:block text-lg leading-7 mb-2 text-[#008e6e] ">
               Stay updated with our latest insights and stories about fitness, wellness, and community engagement.
             </p>
-            <p className="text-lg leading-7 text-[#008e6e]">
+            <p className="hidden md:block text-lg leading-7 text-[#008e6e]">
               From personal journeys to new features, we share everything that matters in the Steppps community.
             </p>
           </div>

@@ -1,7 +1,10 @@
 "use client";
 import Image from "next/image";
-import { useState, useRef } from "react";
+import { useState, useRef, lazy, Suspense } from "react";
 import clsx from 'clsx';
+
+// Lazy load the animated card content
+const AnimatedCard = lazy(() => import('@/components/Hero/AnimatedCard'));
 
 export default function Hero() {
   const [isFirstRolled, setIsFirstRolled] = useState(false);
@@ -11,18 +14,18 @@ export default function Hero() {
 
   const handleFirstRoll = () => {
     setIsFirstRolled(true);
-    setTimeout(() => {
+    // Use requestAnimationFrame for smoother scrolling
+    requestAnimationFrame(() => {
       firstCardRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }, 200);
+    });
   };
 
   const handleSecondRoll = () => {
     setIsSecondRolled(true);
-    setTimeout(() => {
+    requestAnimationFrame(() => {
       secondCardRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }, 200);
+    });
   };
-
 
   return (
     <>
@@ -38,7 +41,7 @@ export default function Hero() {
         <div className="absolute inset-0 -z-10 overflow-hidden">
        
         </div>
-        <div className="container mx-auto px-2 sm:px-4 py-10 md:py-12 lg:py-16">
+        <div className="container mx-auto px-2 sm:px-4 py-2 md:py-12 lg:py-5">
           <div className="w-full flex flex-col items-center">
             {/* First Section */}
             <div className="relative w-full max-w-[1200px] md:h-[300px]">
@@ -91,7 +94,7 @@ export default function Hero() {
                 </div>
                 <div className="absolute right-0 top-1/2 -translate-y-1/2 h-[300px] w-[300px] z-10">
                   <Image
-                    src="/images/hero/fit.jpg"
+                    src="/images/hero/fit.png"
                     alt="Active lifestyle"
                     fill
                     className="object-cover rounded-xl"
@@ -105,7 +108,7 @@ export default function Hero() {
                 {/* Image */}
                 <div className="w-full h-[180px] xs:h-[200px] mb-4 flex justify-center items-center">
                   <Image
-                    src="/images/hero/fit.jpg"
+                    src="/images/hero/fit.png"
                     alt="Active lifestyle"
                     width={160}
                     height={160}
@@ -162,7 +165,6 @@ export default function Hero() {
                 )}
               </div>
             </div>
-
             {/* Second Section */}
             <div className="relative w-full max-w-[1200px] my-8 md:my-10 md:h-[300px]">
               {/* Desktop Layout */}
@@ -184,33 +186,13 @@ export default function Hero() {
                   </>
                 )}
                 {/* Animated Card */}
-                <div
-                  ref={secondCardRef}
-                  onClick={() => setIsSecondRolled(false)}
-                  className={clsx(
-                    'absolute right-44 top-1/2 -translate-y-1/2 h-[300px] w-[800px] bg-green/70 shadow-lg z-50 p-6 flex items-center justify-center cursor-pointer transform transition-transform duration-500 origin-top',
-                    isSecondRolled ? 'scale-y-100' : 'scale-y-0'
-                  )}
-                >
-                  <div className="text-black dark:text-white text-sm md:text-base">
-                  <p className="mb-4">💪 Change Starts with One Step</p>
-                    <p className="font-semibold mb-2">Getting active isn&apos;t easy—but you&apos;ve already started. Keep going with these challenges:</p>
-                    <ul className="space-y-2">
-                      <li className="flex items-start">
-                        <span className="mr-2">👣</span>
-                        <span><strong>Walk • Lose • Win</strong><br />Join the June 2025 leaderboard and win cash prizes by walking your way to the top!</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="mr-2">📣</span>
-                        <span><strong> IPL Team Challenges</strong><br />Turn your steps into team pride. Support your IPL team—no competition, just fun.</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="mr-2">🔒</span>
-                        <span><strong>Personal Challenges (Premium)</strong><br />Go private with Steppps Premium. Set your own step goals and track progress your way.</span>
-                       </li>
-                    </ul>
-                  </div>
-                </div>
+                <Suspense fallback={<div className="h-[300px] w-[800px] bg-gray-100 animate-pulse" />}>
+                  <AnimatedCard
+                    ref={secondCardRef}
+                    isOpen={isSecondRolled}
+                    onClick={() => setIsSecondRolled(false)}
+                  />
+                </Suspense>
                 <div className="absolute left-0 top-1/2 -translate-y-1/2 h-[300px] w-[300px] z-10">
                   <Image
                     src="/images/hero/fat.jpg"
@@ -253,35 +235,16 @@ export default function Hero() {
                   </button>
                 )}
                 {/* Animated Card - only render on mobile if open */}
-                {isSecondRolled && (
-                  <div
-                    ref={secondCardRef}
-                    onClick={() => setIsSecondRolled(false)}
-                    className={clsx(
-                      'bg-white dark:bg-gray-800 shadow-lg z-50 p-4 xs:p-6 flex items-center justify-center cursor-pointer transform transition-transform duration-500 origin-top w-full mb-4 rounded-lg',
-                      isSecondRolled ? 'scale-y-100' : 'scale-y-0 mb-0'
-                    )}
-                  >
-                    <div className="text-black dark:text-white text-xs xs:text-sm">
-                    <p className="mb-4">💪 Change Starts with One Step</p>
-                    <p className="font-semibold mb-2">Getting active isn&apos;t easy—but you&apos;ve already started. Keep going with these challenges:</p>
-                    <ul className="space-y-2">
-                      <li className="flex items-start">
-                        <span className="mr-2">👣</span>
-                        <span><strong>Walk • Lose • Win</strong><br />Join the June 2025 leaderboard and win cash prizes by walking your way to the top!</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="mr-2">📣</span>
-                        <span><strong> IPL Team Challenges</strong><br />Turn your steps into team pride. Support your IPL team—no competition, just fun.</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="mr-2">🔒</span>
-                        <span><strong>Personal Challenges (Premium)</strong><br />Go private with Steppps Premium. Set your own step goals and track progress your way.</span>
-                       </li>
-                      </ul>
-                    </div>
-                  </div>
-                )}
+                <Suspense fallback={<div className="h-[200px] w-full bg-gray-100 animate-pulse rounded-lg" />}>
+                  {isSecondRolled && (
+                    <AnimatedCard
+                      ref={secondCardRef}
+                      isOpen={isSecondRolled}
+                      onClick={() => setIsSecondRolled(false)}
+                      isMobile
+                    />
+                  )}
+                </Suspense>
               </div>
             </div>
           </div>

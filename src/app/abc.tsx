@@ -85,7 +85,7 @@ export function CombinedFeatures3DGrid() {
       <div className="absolute inset-0  z-10" />
 
       {/* Content Layer */}
-      <div className="relative z-20 py-12">
+      <div className="relative z-20 py-2">
         <div className="container mx-auto px-4">
           {/* Heading */}
           <div className="relative h-30 flex items-center justify-center group mb-10">
@@ -121,7 +121,7 @@ export function CombinedFeatures3DGrid() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="flex flex-col justify-between rounded-xl border dark:border-neutral-800 bg-green/90 py-10 px-6 shadow-md"
+                className="flex flex-col justify-between rounded-xl border dark:border-neutral-800 bg-[#3399cc]/90 py-10 px-6 shadow-md"
               >
                 <div className="flex items-center gap-2 mb-6 text-neutral-800 dark:text-neutral-100">
                   {feature.icon}

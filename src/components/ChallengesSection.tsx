@@ -82,7 +82,7 @@ export default function ChallengesSection() {
             </h2>
           </div>
 
-          <p className="text-xl text-center text-[#008E6E] font-bold/500 dark:text-gray-400 mb-12 max-w-3xl mx-auto">
+          <p className="hidden md:block text-xl text-center text-[#008E6E] font-bold/500 dark:text-gray-400 mb-12 max-w-3xl mx-auto">
             Group Challenges are exclusive fitness journeys designed for private groups.
             Whether it&rsquo;s your family, friends, colleagues, or a special community,
             these challenges bring you closer while keeping you on your toes&mdash;literally!
@@ -104,7 +104,7 @@ export default function ChallengesSection() {
           <div className="text-left mt-12 flex items-center justify-center">
             <a
               href="/challenges"
-              className="inline-flex hover:bg-gray-100 items-center px-8 py-4 border border-transparent text-sm font-medium rounded-md text-black bg-[#33ccbb]"
+              className="inline-flex hover:bg-gray-100 items-center px-8 py-4 border border-transparent text-m font-medium rounded-md text-black bg-[#33ccbb]"
             >
               Create Your Group Challenge
             </a>

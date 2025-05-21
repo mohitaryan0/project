@@ -40,17 +40,43 @@ export default function AboutSection() {
 
         <div className="flex flex-col items-center md:items-start w-full">
           <div className="bg-white/80 dark:bg-gray-800 rounded-xl shadow-lg flex flex-col justify-center items-center gap-4 mb-6 md:mb-8 w-full max-w-[95vw] md:w-[600px] h-auto md:h-[360px] mx-auto mt-8 md:mt-10 p-4 md:p-8">
-            <p className="text-center text-base md:text-lg text-[#006F5B] dark:text-white font-medium px-2">
+            <p className="hidden md:block text-center text-base md:text-lg text-[#006F5B] dark:text-white font-medium px-2">
               Steppps is your friendly fitness buddy, helping you move more, feel better, and make activity part of your daily rhythm. We believe small steps lead to big changes—and we are here to make every step enjoyable, sustainable, and simple.
             </p>
             <div className="w-full border-t border-gray-300 dark:border-gray-600 my-2 md:my-4"></div>
             <div className="flex flex-col sm:flex-row sm:justify-between items-center w-full gap-4 md:gap-6">
-              <div className="flex gap-4 md:gap-6 justify-center">
-                <img src="/images/about/apple.png" alt="Placeholder 1" className="object-contain w-[140px] h-[44px] md:w-[180px] md:h-[52px]" />
-                <img src="/images/about/google.png" alt="Placeholder 2" className="object-contain w-[140px] h-[44px] md:w-[180px] md:h-[52px]" />
-              </div>
-              <div className="mt-4 sm:mt-0 flex justify-center w-full sm:w-auto">
-                <Image src="/images/about/scan.png" alt="Steppps QR" width={70} height={70} className="object-contain w-[48px] h-[48px] md:w-[120px] md:h-[120px]" />
+              <div className="flex flex-row items-center justify-between w-full sm:w-auto gap-2 md:gap-6">
+                <div className="order-1 sm:order-3">
+                  <Image 
+                    src="/images/about/scan.png" 
+                    alt="Steppps QR" 
+                    width={70} 
+                    height={70} 
+                    className="object-contain w-[40px] h-[40px] md:w-[120px] md:h-[120px]" 
+                  />
+                </div>
+                <div className="flex gap-2 md:gap-6 order-2 sm:order-1">
+                  <div className="relative w-[120px] h-[38px] md:w-[180px] md:h-[52px]">
+                    <a href="https://apps.apple.com/us/app/steppps-steps-to-fitness/id6608976790" target="_blank" rel="noopener noreferrer">
+                      <Image
+                        src="/images/about/apple.png"
+                        alt="Download on App Store"
+                        fill
+                        sizes="(max-width: 768px) 120px, 180px"
+                      />
+                    </a>
+                  </div>
+                  <div className="relative w-[120px] h-[38px] md:w-[180px] md:h-[52px]">
+                    <a href="https://play.google.com/store/apps/details?id=com.mycompany.vruns" target="_blank" rel="noopener noreferrer">
+                      <Image
+                        src="/images/about/google.png"
+                        alt="Get it on Google Play"
+                        fill
+                        sizes="(max-width: 768px) 120px, 180px"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

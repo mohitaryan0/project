@@ -35,7 +35,7 @@ export default function Home() {
       <ChallengesSection />
       <BlogSection />
       <Testimonal  />
-      <AboutSection />
+      <div className="-mt-40  md:mt-0"><AboutSection /></div>
       
       
       

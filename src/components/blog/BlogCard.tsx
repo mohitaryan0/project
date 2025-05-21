@@ -32,9 +32,9 @@ function BlogCard({ title, description, date, image, className }: BlogCardProps)
         />
       </div>
       <div className="p-6">
-        <h3 className="text-lg font-semibold text-white uppercase mb-2">{title}</h3>
-        <p className="text-sm text-gray-300 line-clamp-3">{description}</p>
-        <div className="flex items-center gap-2 text-sm text-gray-400 mt-4">
+        <h3 className="text-lg font-semibold text-black uppercase mb-2">{title}</h3>
+        <p className="text-sm text-black line-clamp-3">{description}</p>
+        <div className="flex items-center gap-2 text-sm text-black/60 mt-4">
           <Clock className="h-4 w-4" />
           {date}
         </div>

@@ -39,7 +39,7 @@ const AppPreview = () => {
   ];
 
   return (
-    <div className="relative  mx-auto my-10 flex h-screen w-full max-w-7xl flex-col items-center justify-center overflow-hidden rounded-3xl">
+    <div className="relative mx-auto my-10 flex h-[350px] md:h-[500px] w-full max-w-7xl flex-col items-center justify-center overflow-hidden rounded-3xl">
       <h2 className="relative z-20 mx-auto max-w-4xl text-center text-2xl font-bold text-balance text-[#ffffff] md:text-4xl lg:text-6xl">
         This is your life and it&apos;s ending one{" "}
         <span className="relative z-20 inline-block rounded-xl bg-[#6bbe6b] px-4 py-1 text-white underline decoration-sky-500 decoration-[6px] underline-offset-[16px] backdrop-blur-sm">
@@ -47,7 +47,7 @@ const AppPreview = () => {
         </span>{" "}
         at a time.
       </h2>
-      <p className="relative z-20 mx-auto max-w-2xl py-8 text-center text-sm text-neutral-200 md:text-base">
+      <p className="relative z-20 mx-auto max-w-2xl py-4 text-center text-sm text-neutral-200 md:text-base">
       ​Steppps is an app that allows you to build on the habit of &apos;Walking&apos; and create health outcomes for you!
       </p>
 
@@ -58,7 +58,7 @@ const AppPreview = () => {
       </div>
 
       {/* Test image */}
-      <Image src="/images/features/track.png" alt="Test" width={500} height={192} className="w-full h-48 object-cover mb-4" />
+      <Image src="/images/features/track.png" alt="Test" width={500} height={192} className="w-full h-32 object-cover mb-2" />
 
       {/* overlay */}
       <div className="absolute inset-0 z-10 h-full w-full bg-black/80 dark:bg-black/40" />

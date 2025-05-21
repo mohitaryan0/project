@@ -1,10 +1,12 @@
 "use client";
 
-import React from "react";
+import React, { lazy, Suspense } from "react";
 
-import { AnimatedTestimonials } from "@/components/Testimonal/animated-testimonials";
+const AnimatedTestimonials = lazy(() => 
+  import("@/components/Testimonal/animated-testimonials").then(mod => ({ default: mod.AnimatedTestimonials }))
+);
 
-const text="What Our Users Say"
+const text = "What Our Users Say";
 const testimonials = [
   {
     quote: "The fitness social network feature has completely transformed my workout routine. I love connecting with other fitness enthusiasts!",
@@ -28,36 +30,24 @@ const testimonials = [
 
 const Testimonal = () => {
   return (
-    <section className="relative py-20  ">
-      <div className="absolute inset-0">
-        
-      </div>
+    <section className="relative py-4 md:py-10">
       <div className="container relative z-10 mx-auto px-4 text-[#116899]">
         {/* Heading */}
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4 animate-gradient-letter text-[#116899]">
-            {text.split(' ').map((word, wordIndex) => (
-              <React.Fragment key={wordIndex}>
-                {wordIndex > 0 && <span className="inline-block mx-0.1">&nbsp;</span>}
-                <span className="inline-block">
-                  {word.split('').map((char, charIndex) => (
-                    <span
-                      key={charIndex}
-                      className="inline-block animate-gradient-letter"
-                      style={{ animationDelay: `${(wordIndex * 10 + charIndex) * 0.1}s` }}
-                    >
-                      {char}
-                    </span>
-                  ))}
-                </span>
-              </React.Fragment>
-            ))}
+          <h1 className="text-4xl font-bold mb-4 text-[#116899]">
+            {text}
           </h1>
-          <p className="text-lg text-[#116899] dark:text-gray-400">Real experiences from our community</p>
+          <p className="text-lg text-[#116899] dark:text-gray-400">
+            Real experiences from our community
+          </p>
         </div>
         
         <div className="max-w-6xl mx-auto w-full">
-          <AnimatedTestimonials testimonials={testimonials} autoplay={true} />
+          <Suspense fallback={
+            <div className="h-[400px] w-full bg-gray-100 animate-pulse rounded-lg" />
+          }>
+            <AnimatedTestimonials testimonials={testimonials} autoplay={true} />
+          </Suspense>
         </div>
       </div>
     </section>
